@@ -1,22 +1,37 @@
 <!doctype html>
 <html lang ="en">
 <head>
-  <meta charset="utf-8"/>
+  <meta charset="utf-8">
   <title>Accessibility Course Overview</title>
   <link rel="stylesheet" href="project2.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="project2.js"></script>
 </head>
+
 <body>
-<div class="offscreen">Main Content</div>
-<div class="container">
+
+  <!-- landmark: header -->
+<header>
+  <div class="offscreen">Main Content</div>
+  <div class="navigation">
+    <a href="#home"><img src="pics/home.png" alt="home"></a>
+    <a href="#links"><img src="pics/links.png" alt="links"></a>
+    <a href="#signup"><img src="pics/signup.png" alt="signup"></a>
+  </div>
+  <div class="container">
+    <div id="accessibilitybanner"></div>
+    </div>
+</header>
+
+<!--
 <div class="navigation">
   <a href="#home"><img src="pics/home.png" alt="home"></a>
   <a href="#links"><img src="pics/links.png" alt="links"></a> 
   <a href="#signup"><img src="pics/signup.png" alt="signup"></a>
 </div>
 
-<div id="accessibilitybanner"></div>
+-->
+
 
 <video width="480" height="360" id="thevideo">
   <source src="employment-movie.mp4" type="video/mp4">
