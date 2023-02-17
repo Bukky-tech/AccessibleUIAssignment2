@@ -53,6 +53,13 @@ a {
   height: 207px;
   background-image: url(pics/accessibilityoverviewbanner.png);
 }
-.center{
-  margin-left: 200px;
+.videospec{
+  margin-left: 400px;
+  width:480px;
+  height:360px;
+}
+.playbutton{
+  width:50px; 
+  height:50px;
+  margin-left: 100px;
 }
