@@ -5,7 +5,11 @@ html,body {
 
 .container {
   margin: auto;
-  width: 800px;
+  width: 1000px;
+}
+.container1{
+  background-color: whitesmoke;
+  
 }
 
 .heading {
@@ -50,10 +54,10 @@ a {
 }
 
 #accessibilitybanner {
-  width: 857px;
+  width: auto;
   height: 207px;
   background-image: url(pics/accessibilityoverviewbanner.png);
-  color: black;
+  
 }
 .videospec{
   margin-left: 400px;
