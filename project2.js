@@ -26,23 +26,52 @@ $(document).ready(function() {
 
   // Form validation
   $("#signupbutton").click(function() {
-    if($("#fn").val()=="" || $("#mi").val()=="" || $("#ln").val()=="") {
-      $("#name").addClass("error");
+    if($("#firstname").val()=="" || $("#lastname").val()=="" || $("#email").val()==""){
+      $("#firstname").addClass("error");
+      if($("#lastname").val()=="" && $("#firstname").val()!="" && $("#email").val()!=""){
+        $("#lastname").addClass("error");
+        $("#firstname").removeClass("error");
+        $("#email").removeClass("error");
 
-      return;
-    } else {
-      $("#name").removeClass("error");
-    }
-
-    if($("#em").val()=="") {
+      }
+      if($("#email").val()=="" && $("#firstname").val()!="" && $("#lastname").val()!=""){
       $("#email").addClass("error");
+      $("#firstname").removeClass("error");
+      $("#lastname").removeClass("error");
 
+      }
+      if($("#email").val()=="" && $("#lastname").val()=="" && $("#firstname").val()!=""){
+        $("#email").addClass("error");
+        $("#firstname").removeClass("error");
+        $("#lastname").addClass("error");
+  
+        }
+      if($("#email").val()=="" && $("#firstname").val()=="" && $("#lastname").val()==""){
+          $("#email").addClass("error");
+          $("#firstname").addClass("error");
+          $("#lastname").addClass("error");
+    
+          }
+      alert("Please fill in required informatiom")
+   
       return;
-    } else {
-      $("#name").removeClass("error");
+
+    } 
+    
+    else {
+      $("#firstname").removeClass("error");
+      $("#lastname").removeClass("error");
+      $("#email").removeClass("error");
     }
+
+  
 
     alert("Thank you!  Please watch your email for our exciting newsletter and offers!");
+    $("#firstname").val("");
+    $("#firstname").val("");
+    $("middleinitial").val("");
+    $("#lastname").val("");
+    $("#email").val("");
   });
 });
 

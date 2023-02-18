@@ -46,6 +46,7 @@ a {
 
 .error {
   color: red;
+  border: 2px dashed red;
 }
 
 #accessibilitybanner {
@@ -66,4 +67,7 @@ a {
 }
 .textcolor{
   color: black;
+}
+.header1{
+  position: fixed;
 }
